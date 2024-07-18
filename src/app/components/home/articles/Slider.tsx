@@ -7,6 +7,7 @@ import 'swiper/css/autoplay';
 import { articles } from './data';
 import Image from 'next/image'
 import Link from 'next/link'
+import "./article.scss"
 import ArrowRight from '@/assets/svg/ArrowRight';
 
 type Props = {}
