@@ -3,37 +3,12 @@ import MenuIcon from "@/assets/svg/MenuIcon";
 import "./header.scss"
 import LogoIcon from "@/assets/svg/LogoIcon";
 import SearchIcon from "@/assets/svg/SearchIcon";
-import { Dropdown, MenuProps } from "antd";
+import { Dropdown } from "antd";
 import Link from "next/link";
 import { useState } from "react";
 import CloseIcon from "@/assets/svg/CloseIcon";
+import {items, menuItems} from './data'
 
-const menuItems = [
-  {text: "Главная", link: "/"},
-  {text: "О нас", link: "/"},
-  {text: "Продукты", link: "/"},
-  {text: "Контакты", link: "/"},
-  {text: "Новости", link: "/"},
-]
-
-const items: MenuProps['items'] = [
-  {
-    key: '1',
-    label: (
-      <a rel="noopener noreferrer" href="#">
-        RU
-      </a>
-    ),
-  },
-  {
-    key: '2',
-    label: (
-      <a rel="noopener noreferrer" href="#">
-        UZ
-      </a>
-    ),
-  },
-]
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
