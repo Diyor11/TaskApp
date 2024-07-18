@@ -1,0 +1,147 @@
+#header {
+  background: transparent;
+  width: 100%;
+  height: 66px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (max-width: 1200px) {
+    height: 56;
+  
+  }
+}
+
+.header__icon {
+  @media (max-width: 992px) {
+    width: 100px;
+    height: 56;
+  }
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  height: auto;
+  justify-content: space-between;
+}
+
+
+.header__links{
+  display: flex;
+  align-items:center;
+  gap: 45px;
+  
+  @media (max-width: 1200px) {
+    gap: 20px;
+  }
+
+  @media(max-width: 762px) {
+    display: none;
+  }
+}
+
+.header__menu-btn {
+  display: block;
+  cursor: pointer;
+
+  @media(min-width: 762px) {
+    display: none;
+  }
+}
+
+.header__link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  @media (max-width: 1200px) {
+    font-size: 16px;
+    font-weight: 500;
+  
+  }
+}
+// text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+.search-form{
+  width: 240px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-form__input{
+  border: none;
+  font-size: 18px;
+  font-weight: 550;
+  padding-left: 45px;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+}
+
+.search-form__input::placeholder{
+  color: #d6d6d6;
+}
+
+.search-form__icon{
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+}
+
+.language__btn {
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  background: transparent;
+}
+
+// -------- Sidebar ----------
+.sidebar{
+  z-index: 1;
+  padding: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(25px);
+
+  @media(min-width: 762px) {
+    display: none;
+  }
+}
+
+.sidebar.hide{display: none;}
+.sidebar.active{display: block;}
+
+.sidebar__action{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 32px;
+}
+
+.sidebar__links{
+}
+
+.sidebar__link{
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 16px;
+  text-align: center;
+
+}
