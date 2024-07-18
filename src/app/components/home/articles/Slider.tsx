@@ -18,6 +18,7 @@ function Slider({}: Props) {
     className='article-slider'
            modules={[Autoplay]}
            autoplay={{delay: 1000}}
+           loop={true} 
         >
           {articles.map(({text, img}, index) => (
             <SwiperSlide key={index}>
